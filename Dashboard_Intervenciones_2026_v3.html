@@ -313,7 +313,7 @@
             <tbody id="tbodyCrono"></tbody>
             <tfoot>
               <tr class="tfoot-total">
-                <td>TOTAL</td><td>430</td>
+                <td>TOTAL</td><td>439</td>
               </tr>
             </tfoot>
           </table>
@@ -339,9 +339,9 @@ function paleta(n){
 
 // ── TIPO INTERVENCIÓN ──
 const tipos = [
-  { nombre:'Proyecto de inversión/Obra', cant:408 },
-  { nombre:'Actividad',                  cant:10  },
-  { nombre:'Programa',                   cant:8   },
+  { nombre:'Proyecto de inversión/Obra', cant:415 },
+  { nombre:'Actividad',                  cant:11  },
+  { nombre:'Programa',                   cant:9   },
   { nombre:'Decreto/Norma',              cant:2   },
   { nombre:'Otro',                       cant:2   },
 ];
@@ -393,8 +393,8 @@ new Chart(document.getElementById('tortaCant'),{
 });
 
 // ── BARRAS HORIZONTALES MONTO ──
-const deptoLabels = ['COCHABAMBA','SANTA CRUZ','LA PAZ','BENI','SIN REF.','POTOSÍ','ORURO','TARIJA','CHUQUISACA','PANDO','CBBA-CHQ-SCZ','LP-EL ALTO'];
-const deptoMontos = [1201.4,1020.7,553.3,332.5,312.1,220.1,191.2,114.4,101.0,95.9,51.3,31.7];
+const deptoLabels = ['COCHABAMBA','SANTA CRUZ','LA PAZ','BENI','ORURO.','POTOSÍ','SIN REFERENCIA','TARIJA','CHUQUISACA','PANDO','VARIOS DPTOS.'];
+const deptoMontos = [1211.9,1020.7,738.5,332.5,299.4,221.5,138.1,115.0,112.3,95.9,52.2];
 
 // colores alternados verde/dorado
 const barColors = deptoLabels.map((_,i)=> i%2===0 ? VERDE : DORADO);
@@ -455,7 +455,7 @@ new Chart(document.getElementById('chartRangos'),{
   data:{
     labels:['< 2 Millones','2 a 7 Millones','> 7 Millones','Sin Referencia'],
     datasets:[{
-      data:[200,100,99,31],
+      data:[99,260,42,38],
       backgroundColor:[VERDE,DORADO,VERDE_LIGHT,'#b0a080'],
       borderRadius:5, borderSkipped:false
     }]
@@ -493,10 +493,10 @@ new Chart(document.getElementById('chartRangos'),{
 
 // ── TABLA CRONOGRAMA ──
 const cronograma=[
-  {mes:'Mayo',año:2026,cant:150},{mes:'Junio',año:2026,cant:119},
-  {mes:'Julio',año:2026,cant:113},{mes:'Agosto',año:2026,cant:32},
+  {mes:'Mayo',año:2026,cant:147},{mes:'Junio',año:2026,cant:119},
+  {mes:'Julio',año:2026,cant:118},{mes:'Agosto',año:2026,cant:37},
   {mes:'Septiembre',año:2026,cant:3},{mes:'Octubre',año:2026,cant:2},
-  {mes:'Noviembre',año:2026,cant:1},{mes:'Diciembre',año:2026,cant:2},
+  {mes:'Noviembre',año:2026,cant:2},{mes:'Diciembre',año:2026,cant:3},
   {mes:'Febrero',año:2027,cant:2},{mes:'Marzo',año:2027,cant:1},
   {mes:'Julio',año:2027,cant:1},{mes:'Diciembre',año:2027,cant:4},
 ];
